@@ -10,6 +10,7 @@ import { ProductCategoryComponent } from './homepage/components/product-category
 import { BlogComponent } from './homepage/components/blog/blog.component';
 import { ProductFeaturedComponent } from './homepage/components/product-featured/product-featured.component';
 import { HomepageService } from './homepage/homepage.service';
+import { SharedModule } from './modules/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomepageService } from './homepage/homepage.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule,
   ],
   providers: [HomepageService],
   bootstrap: [AppComponent]

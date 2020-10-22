@@ -1,0 +1,5 @@
+Pagination
+<ul *ngIf="totalPage">
+  <li *ngFor="let page of counter();let i=index">{{i+1}}</li>
+</ul>
+<button (click)="addNewProduct('abc')">Add to parent's list</button>

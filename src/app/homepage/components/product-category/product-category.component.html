@@ -9,7 +9,8 @@
             <span>All departments</span>
           </div>
           <ul>
-            <li *ngFor="let productCategory of productCategory$ | async"><a href="#">{{productCategory.name}}</a></li>
+            <li *ngFor="let productCategory of productCategory$ | async"><a
+                routerLink="/product">{{productCategory.name}}</a></li>
           </ul>
         </div>
       </div>

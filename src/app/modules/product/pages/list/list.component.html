@@ -1,0 +1,4 @@
+<p *ngFor="let item of items">{{item}}</p>
+
+
+<app-pagination (newProductEvent)="addProduct($event)" [totalPage]="totalPage">test</app-pagination>
